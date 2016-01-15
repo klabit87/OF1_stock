@@ -1,8 +1,11 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 #variables
 FILE=*.zip
 
+=======
+>>>>>>> 4699b79... Update zip.sh
 #get all files
 cp arch/arm/boot/zImage ../builds/AIK-Linux/split_img
 cp drivers/scsi/scsi_wait_scan.ko ../builds/system/lib/modules
@@ -17,6 +20,7 @@ cp image-new.img ..
 
 #Add boot.img to zip
 cd ..
+<<<<<<< HEAD
 if [ -f $FILE ];
 then
     echo "File $FILE exists."
@@ -54,3 +58,17 @@ else
 fi
 
 
+=======
+mv image-new.img boot.img
+cp *.zip previousbuilds/
+mv *.zip test.zip
+zip -g test.zip boot.img
+zip -g test.zip system/lib/modules/scsi_wait_scan.ko
+zip -g test.zip system/lib/modules/dhd.ko
+
+#Name new kernel.zip
+echo "Enter name of new zip: "
+read input_variable
+mv test.zip $input_variable.zip
+echo "$input_variable.zip is ready"
+>>>>>>> 4699b79... Update zip.sh
