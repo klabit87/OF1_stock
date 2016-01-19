@@ -1,11 +1,17 @@
 #!/bin/bash
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #variables
 FILE=*.zip
 
 =======
 >>>>>>> 4699b79... Update zip.sh
+=======
+#variables
+FILE=*.zip
+
+>>>>>>> 3fca2e2... Update zip script/Fix errors.
 #get all files
 cp arch/arm/boot/zImage ../builds/AIK-Linux/split_img
 cp drivers/scsi/scsi_wait_scan.ko ../builds/system/lib/modules
@@ -21,6 +27,9 @@ cp image-new.img ..
 #Add boot.img to zip
 cd ..
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3fca2e2... Update zip script/Fix errors.
 if [ -f $FILE ];
 then
     echo "File $FILE exists."
@@ -58,6 +67,7 @@ else
 fi
 
 
+<<<<<<< HEAD
 =======
 mv image-new.img boot.img
 cp *.zip previousbuilds/
@@ -72,3 +82,5 @@ read input_variable
 mv test.zip $input_variable.zip
 echo "$input_variable.zip is ready"
 >>>>>>> 4699b79... Update zip.sh
+=======
+>>>>>>> 3fca2e2... Update zip script/Fix errors.
