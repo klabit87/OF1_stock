@@ -2,11 +2,17 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #variables
 FILE=*.zip
 
 =======
 >>>>>>> 4699b79... Update zip.sh
+=======
+#variables
+FILE=*.zip
+
+>>>>>>> 3fca2e2... Update zip script/Fix errors.
 =======
 #variables
 FILE=*.zip
@@ -28,6 +34,9 @@ cp image-new.img ..
 cd ..
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3fca2e2... Update zip script/Fix errors.
 =======
 >>>>>>> 3fca2e2... Update zip script/Fix errors.
 if [ -f $FILE ];
@@ -68,6 +77,7 @@ fi
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 mv image-new.img boot.img
 cp *.zip previousbuilds/
@@ -82,5 +92,7 @@ read input_variable
 mv test.zip $input_variable.zip
 echo "$input_variable.zip is ready"
 >>>>>>> 4699b79... Update zip.sh
+=======
+>>>>>>> 3fca2e2... Update zip script/Fix errors.
 =======
 >>>>>>> 3fca2e2... Update zip script/Fix errors.
